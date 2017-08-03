@@ -1,0 +1,40 @@
+.flashcard-box .word {
+  animation: grow .4s;
+  transform-origin: bottom;
+}
+
+.flashcard-box {
+  transition: transform 0.6s;
+  animation: retract 1s;
+}
+
+/*@keyframes grow{
+  from {
+    transform: scale(1, 0);
+
+  }
+  to {
+
+    transform: scale(1,1);
+  }
+}*/
+
+@keyframes grow{
+  from {
+    margin-top: 100%;
+
+  }
+  to {
+
+    margin-top: inherit;
+  }
+}
+
+@keyframes retract {
+  from {
+    tranform: translateX(100px);
+  }
+  to {
+    tranform: translateX(0px);
+  }
+}
